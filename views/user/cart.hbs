@@ -1,0 +1,52 @@
+{{!-- <section>
+    <h1>Cart</h1>
+    <div class="container">
+        <table class="table mt-5">
+            <thead>
+                <tr>
+                    <th scope="col">Items</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+             {{#each products}}
+                <tr>
+                    <td><img style="width: 70px; height: 70px;" src="/product-images/{{this._id}}.jpg" alt="">
+                    </td>
+                    <td>{{this.Name}}</td>
+                    <td>
+                        <button class="cart-item-count mr-3">-</button>1<button class="cart-item-count ml-3">+</button>
+                    </td>
+                    <td>
+                        <a href="" class="btn btn-danger">Remove</a>
+                    </td>
+                </tr>
+                 {{/each}}
+            </tbody>
+            
+        </table>
+    </div>
+</section> --}}
+<div class="container">
+    <h1>Cart</h1>
+
+    <div class="row">
+       
+            {{#each userCart}}
+                <div class="col-md-3 ml-2">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/product-images/{{this._id}}.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">{{this.name}}</h5>
+                            <p class="card-text">{{this.description}}</p>
+                            <p class="card-text">Rs.{{this.price}}</p>
+                            <a href="/remove-item/{{this._id}}" class="btn btn-primary" onclick="confirm('Remove from cart ?')">Remove</a>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+    
+    </div>
+
+</div>

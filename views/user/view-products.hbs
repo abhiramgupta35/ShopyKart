@@ -1,0 +1,176 @@
+<div class="" style="height: 500px;background-color: black;color: aliceblue;width: 100%;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6" style="padding-top:100px ;">
+                <h1 class="banner_taital">Apple iphone 14 pro max</h1>
+                <p class="banner_text">iPhone 14 Pro and 14 Pro Max. With Dynamic Island. Crash Detection. An innovative
+                    48MP camera. And A16 Bionic · ƒ/1.9 aperture · Autofocus with Focus Pixels · Six‑element lens ·
+                    Retina Flash · Photonic Engine</p>
+                <div style="padding-top: 50px;margin-left: 50px;cursor: pointer;">
+                    <p>Avilable colours</p>
+                    <span class="dot"
+                        style="height: 25px; width: 25px;background-color: #fffafa;border-radius: 50%;display: inline-block;"></span>
+                    <span class="dot"
+                        style="height: 25px; width: 25px;background-color: #a89c9c;border-radius: 50%;display: inline-block;"></span>
+                    <span class="dot"
+                        style="height: 25px; width: 25px;background-color: #ddec02;border-radius: 50%;display: inline-block;"></span>
+                    <span class="dot"
+                        style="height: 25px; width: 25px;background-color: #8905aa;border-radius: 50%;display: inline-block;"></span>
+                    <button class="btn btn-primary" style="margin-left: 50px;p">Buy now</button>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="banner_img"><img alt="Img" style="height: 500px;" src="/images/Iphone 14 banner.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section>
+    {{!-- products section starting --}}
+    {{!-- <div class="container">
+        <div class="row">
+            {{#each products}}
+            <div class="col-md-3 mt-5">
+                <div class="card" style="width: 15rem; height:25rem">
+                    <img class="card-img-top" src="/product-images/{{this._id}}.jpg" alt=""
+                        style="width: 200px;height:200px">
+                    <div class="card-body">
+                        <h5 class="card-title">{{this.Name}}</h5>
+                        <h6>{{this.Description}}</h6>
+                        <p class="card-text">{{this.Price}}</p>
+                        <a href="#" class="btn btn-primary">buy now</a>
+                        <a href="/add-to-cart/{{this._id}}" class="btn btn-success">Add to cart</a>
+                    </div>
+                </div>
+
+            </div>
+            {{/each}}
+        </div>
+    </div> --}}
+    <div class="product_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="product_taital">Our Products</h1>
+                    <p class="product_text">Shop products with exiting offfers </p>
+                </div>
+            </div>
+            <div class="product_section_2 layout_padding">
+                <div class="row">
+                    {{#each products}}
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="product_box">
+                            <h4 class="bursh_text">{{this.Name}}</h4>
+                            <p class="lorem_text">{{this.Description}} </p>
+                            <img class="card-img-top" src="/product-images/{{this._id}}.jpg" alt=""
+                                style="width: 220px;height:200px">
+                            <div class="btn_main">
+                                <div class="buy_bt">
+                                    <ul>
+                                        <li class="active"><a href="/add-to-cart/{{this._id}}">Add to cart</a></li>
+                                        <li><a href="/user/Order/{{this._id}}" class="btn btn-primary">Buy now</a></li>
+                                    </ul>
+                                </div>
+                                <h3 class="price_text">Price:{{this.Price}}</h3>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- footer section start -->
+<div class="footer_section layout_padding">
+    <div class="container" style="padding-top: 50px;">
+        <div class="footer_logo"><a href="index.html"><img src="images/footer-logo.png"></a></div>
+        <div class="contact_section_2">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3 class="address_text">Contact Us</h3>
+                    <div class="address_bt">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i><span
+                                        class="padding_left10">Address : Loram Ipusm</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left10">Call
+                                        : +01 1234567890</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left10">Email
+                                        : demo@gmail.com</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <span
+                        style="color: #fefefd;text-align: center;font-size: xx-large;padding-left: 80px;font-family: Verdana, Geneva, Tahoma, sans-serif;">SHOPYKART</span>
+                    <p class="dummy_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="main">
+                        <h3 class="address_text">Best Products</h3>
+                        <p class="ipsum_text">Mobile Phones <br>Laptops <br>Pc <br>Gadgets <br>Gaming
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Remove the container if you want to extend the Footer to full width. -->
+
+<footer class="bg-light text-center text-white" style="background-color: #333333;">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
+                    class="fab fa-facebook-f"></i></a>
+
+            <!-- Twitter -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
+                    class="fab fa-twitter"></i></a>
+
+            <!-- Google -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><i
+                    class="fab fa-google"></i></a>
+
+            <!-- Instagram -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
+                    class="fab fa-instagram"></i></a>
+
+            <!-- Linkedin -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <!-- Github -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #333333;" href="#!" role="button"><i
+                    class="fab fa-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-white">Abhi</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+
